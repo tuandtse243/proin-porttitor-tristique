@@ -1,0 +1,21 @@
+.home__container {
+  .wrapper__block {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 1200px) {
+    .wrapper__block {
+      padding: 0 24px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .wrapper__block {
+      padding: 0;
+    }
+    .wrapper__block__mobile {
+      padding: 0 30px;
+    }
+  }
+}

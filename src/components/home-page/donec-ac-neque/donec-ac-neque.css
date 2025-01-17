@@ -1,0 +1,86 @@
+.donec-ac-neque__container {
+  margin: 100px 0;
+
+  .donec-ac-neque__container__block__wrapper {
+    display: flex;
+    gap: 30px 0;
+    flex-direction: column;
+    margin-top: 63px;
+    .donec-ac-neque__container__block {
+      display: flex;
+      height: 305px;
+      gap: 0 30px;
+      align-items: center;
+      .donec-ac-neque__container__block__img {
+        max-width: 570px;
+        width: 100%;
+        height: 305px;
+        border-radius: 30px;
+        img {
+          height: 305px;
+          width: 100%;
+          object-fit: cover;
+          border-radius: 30px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .donec-ac-neque__container__block__wrapper {
+      margin-top: 22px;
+      gap: 40px 0;
+      .donec-ac-neque__container__block {
+        height: unset;
+        gap: 20px 80px;
+        flex-wrap: wrap;
+        justify-content: center;
+        .donec-ac-neque__container__block__img {
+          max-width: unset;
+          width: 90%;
+          height: 250px;
+          img {
+            height: 250px;
+            object-fit: cover;
+          }
+        }
+      }
+      /* .donec-ac-neque__container__block:first-child {
+        flex-direction: row-reverse;
+      } */
+    }
+  }
+  @media screen and (max-width: 768px) {
+    margin: 50px 0;
+    .donec-ac-neque__container__block__wrapper {
+      margin-top: 22px;
+      gap: 40px 0;
+      .donec-ac-neque__container__block {
+        height: unset;
+        flex-direction: column;
+        gap: 20px 0;
+        .donec-ac-neque__container__block__img {
+          max-width: 570px;
+          width: 100%;
+          height: 200px;
+          img {
+            height: 200px;
+            object-fit: cover;
+          }
+        }
+      }
+      .donec-ac-neque__container__block:first-child {
+        flex-direction: column-reverse;
+      }
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .donec-ac-neque__container__block__wrapper {
+      .donec-ac-neque__container__block {
+        .donec-ac-neque__container__block__img {
+          max-width: 315px;
+        }
+      }
+    }
+  }
+}

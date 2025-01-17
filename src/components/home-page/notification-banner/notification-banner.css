@@ -1,0 +1,22 @@
+.notification__banner__container {
+  height: 50px;
+  background: #CBFC01;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 10px;
+  z-index: 999;
+  position: relative;
+  p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15.323px;
+    color: #000000;
+  }
+  svg {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+}

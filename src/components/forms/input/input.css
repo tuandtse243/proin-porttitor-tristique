@@ -1,0 +1,26 @@
+.input-form__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  label {
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 8px;
+  }
+  input {
+    padding: 15px 20px 15.38px;
+    height: 50.379px;
+    border-radius: 8px;
+    border: 1px solid rgba(115, 134, 152, 0.20);
+    background: #F6F6F6;
+
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}

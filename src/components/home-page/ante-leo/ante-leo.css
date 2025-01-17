@@ -1,0 +1,178 @@
+.ante-leo__container {
+  margin: 100px 0;
+  display: flex;
+  gap: 0 30px;
+  align-items: flex-end;
+  .ante-leo__container__left {
+    .ante-leo__container__left__title {
+      color: #000;
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin: 0;
+      span {
+        position: relative;
+      }
+      span::after {
+        content: '';
+        position: absolute;
+        height: 11px;
+        width: 100%;
+        background: #CBFC01;
+        bottom: -3px;
+        left: 0;
+        z-index: 9;
+      }
+    }
+    .ante-leo__container__left__subtitle {
+      margin: 12px 0 32px;
+      color: #000;
+      font-feature-settings: 'liga' off, 'clig' off;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+    }
+    .ante-leo__container__left__imageMobile {
+      display: none;
+      max-width: 315px;
+      width: 100%;
+      height: 329px;
+      margin-bottom: 20px;
+      img {
+        width: 100%;
+        height: 329px;
+        object-fit: cover;
+        border-radius: 30px;
+      }
+    }
+    .ante-leo__container__left__card {
+      display: flex;
+      gap: 0 30px;
+      align-items: center;
+    }
+  }
+  .ante-leo__container__right {
+    max-width: 570px;
+    width: 100%;
+    height: 506px;
+    img {
+      object-fit: contain;
+      border-radius: 30px;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    gap: 36px 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .ante-leo__container__left {
+      .ante-leo__container__left__title {
+        text-align: center;
+        margin: 0;
+        span {
+          position: relative;
+        }
+      }
+      .ante-leo__container__left__subtitle {
+        max-width: 800px;
+        text-align: center;
+      }
+      .ante-leo__container__left__card {
+        width: 100%;
+        gap: 0 40px;
+        justify-content: center;
+      }
+    }
+    .ante-leo__container__right {
+      max-width: 580px;
+      width: 100%;
+      height: 506px;
+      img {
+        width: 100%;
+        object-fit: contain;
+        border-radius: 30px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    gap: 22px 0;
+    justify-content: center;
+    align-items: center;
+    .ante-leo__container__left {
+      .ante-leo__container__left__title {
+        text-align: center;
+        font-size: 32px;
+        margin: 0;
+        span {
+          position: relative;
+        }
+      }
+      .ante-leo__container__left__subtitle {
+        margin: 22px 0 22px;
+        text-align: center;
+      }
+      .ante-leo__container__left__card {
+        flex-direction: column;
+        gap: 20px 0;
+        justify-content: flex-start;
+      }
+    }
+    .ante-leo__container__right {
+      max-width: 580px;
+      width: 100%;
+      height: 506px;
+      img {
+        width: 100%;
+        object-fit: contain;
+        border-radius: 30px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    flex-direction: column;
+    gap: 22px 0;
+    .ante-leo__container__left {
+      .ante-leo__container__left__title {
+        text-align: center;
+        font-size: 32px;
+        margin: 0;
+        span {
+          position: relative;
+        }
+        span::after {
+          content: '';
+          position: absolute;
+          height: 11px;
+          width: 100%;
+          background: #CBFC01;
+          bottom: -8px;
+          left: 0;
+          z-index: 9;
+        }
+      }
+      .ante-leo__container__left__subtitle {
+        margin: 22px 0 22px;
+        text-align: center;
+      }
+      .ante-leo__container__left__imageMobile {
+        display: block;
+        margin: 22px auto;
+      }
+      .ante-leo__container__left__card {
+        flex-direction: column;
+        gap: 20px 0;
+        justify-content: flex-start;
+      }
+    }
+    .ante-leo__container__right {
+      display: none;
+    }
+  }
+}
