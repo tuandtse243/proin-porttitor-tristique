@@ -41,6 +41,11 @@
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  .card-feature__container__learn-more:hover {
+    color: #CBFC01;
   }
 
   @media screen and (max-width: 768px) {
