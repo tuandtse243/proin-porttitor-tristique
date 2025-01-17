@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import './phone-slide.css'
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow } from "swiper/modules";
+import {  } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -81,8 +81,9 @@ const PhoneSlide = () => {
           slideToClickedSlide={true}
           centeredSlides={true}
           spaceBetween={30}
-          modules={[EffectCoverflow]}
+          modules={[]}
           className="phone-slide"
+          slidesOffsetAfter={10}
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
           }}
