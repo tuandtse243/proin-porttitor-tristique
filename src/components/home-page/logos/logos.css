@@ -1,0 +1,32 @@
+.logos__container {
+  position: relative;
+  margin: 45.44px 0 157.67px 0;
+  display: flex;
+  align-items: center;
+  gap: 0 60px;
+  overflow: hidden;
+  .logos__container__item {
+    img {
+      object-fit: contain;
+    }
+  }
+
+  .blur-left {
+    position: absolute;
+    top: -45.5px;
+    left: -135px;
+    object-fit: contain;
+  }
+
+  .blur-right {
+    position: absolute;
+    top: -45.5px;
+    right: -135px;
+    object-fit: contain;
+  }
+
+  @media screen and (max-width: 768px) {
+    overflow-x: hidden;
+    margin: 45.44px 0 107.67px 0;
+  }
+}

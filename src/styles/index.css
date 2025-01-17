@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Onest", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+div, input, textarea {
+  box-sizing: border-box;
+}
+
+code {
+  font-family: "Onest", serif;
+}
