@@ -1,7 +1,6 @@
 import React, { useRef, useState } from 'react'
 import './phone-slide.css'
 import { Swiper, SwiperSlide } from "swiper/react";
-import {  } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -76,19 +75,35 @@ const PhoneSlide = () => {
           grabCursor={true}
           keyboard={true}
           speed={400}
-          slidesPerView={5}
           loop={true}
           slideToClickedSlide={true}
           centeredSlides={true}
-          spaceBetween={30}
-          modules={[]}
           className="phone-slide"
-          slidesOffsetAfter={10}
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
           }}
           onSlideChangeTransitionEnd={() => {
             setCurrentIndex(swiperRef.current?.realIndex);
+          }}
+          breakpoints={{
+            0: {
+              slidesPerView: 1.5,
+              spaceBetween: "1.5%",
+              centeredSlides: false,
+            },
+            375: {
+              slidesPerView: 2.5,
+              spaceBetween: "1.5%",
+              centeredSlides: true,
+            },
+            769: {
+              slidesPerView: 4,
+              spaceBetween: "1.5%",
+            },
+            1201: {
+              slidesPerView: 5,
+              spaceBetween: "1.5%",
+            },
           }}
         >
           <SwiperSlide>
