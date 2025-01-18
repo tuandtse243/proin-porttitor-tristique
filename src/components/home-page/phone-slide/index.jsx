@@ -75,7 +75,6 @@ const PhoneSlide = () => {
           grabCursor={true}
           keyboard={true}
           speed={400}
-          slidesPerView={5}
           loop={true}
           slideToClickedSlide={true}
           centeredSlides={true}
@@ -87,14 +86,23 @@ const PhoneSlide = () => {
             setCurrentIndex(swiperRef.current?.realIndex);
           }}
           breakpoints={{
+            0: {
+              slidesPerView: 1.5,
+              spaceBetween: "1.5%",
+              centeredSlides: false,
+            },
             375: {
-              slidesPerView: 3,
+              slidesPerView: 2.5,
+              spaceBetween: "1.5%",
+              centeredSlides: true,
             },
-            768: {
+            769: {
               slidesPerView: 4,
+              spaceBetween: "1.5%",
             },
-            1200: {
+            1201: {
               slidesPerView: 5,
+              spaceBetween: "1.5%",
             },
           }}
         >

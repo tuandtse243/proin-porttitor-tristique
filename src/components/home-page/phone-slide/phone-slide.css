@@ -66,15 +66,16 @@
   .phone-layout {
     position: absolute;
     bottom: 0;
-    right: 13%;
     z-index: 9;
     pointer-events: none;
     object-fit: contain;
+    height: 732px;
+    left: 54%;
   }
   .prev-arrow {
     position: absolute;
     bottom: 336px;
-    right: 660px;
+    left: calc(54% - 110px);
     z-index: 9;
     cursor: pointer;
     width: 60px;
@@ -83,7 +84,7 @@
   .next-arrow {
     position: absolute;
     bottom: 336px;
-    right: 121px;
+    left: calc(54% + 450px);
     z-index: 9;
     cursor: pointer;
     width: 60px;
@@ -100,10 +101,10 @@
     .swiper {
       width: 100%;
       height: 100%;
-      /* .swiper-wrapper {
-        padding-left: 12%;
+      .swiper-wrapper {
         align-items: center;
-      } */
+        padding-left: 190px !important;
+      }
     }
     .swiper-slide {
       display: flex;
@@ -135,20 +136,20 @@
       }
     }
     .swiper-slide.swiper-slide-active {
-      width: 388px !important;
+      width: 372px !important;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 0 75px 110px 47px !important;
+      margin: 8px 75px 110px 47px !important;
       div {
-        width: 388px !important;
-        height: 732px !important;
+        width: 372px !important;
+        height: 725px !important;
         position: relative;
         img {
           width: 100%;
-          height: 732px;
+          height: 725px;
           object-fit: cover;
-          border-radius: 40px 40px 0 0;
+          border-radius: 60px 60px 0 0;
         }
       }
       div::before {
@@ -156,7 +157,46 @@
       }
     }
   }
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1600px) {
+    .phone-layout {
+      left: 55.4%;
+    }
+    .prev-arrow {
+      bottom: 336px;
+      left: calc(55.4% - 110px);
+    }
+    .next-arrow {
+      bottom: 336px;
+      left: calc(55.4% + 450px);
+    }
+  }
+  @media screen and (max-width: 1440px) {
+    .phone-layout {
+      left: 57%;
+    }
+    .prev-arrow {
+      bottom: 336px;
+      left: calc(57% - 100px);
+    }
+    .next-arrow {
+      bottom: 336px;
+      left: calc(57% + 435px);
+    }
+  }
+  @media screen and (max-width: 1326px) {
+    .phone-layout {
+      left: 58.5%;
+    }
+    .prev-arrow {
+      bottom: 250px;
+      left: calc(58.5% - 100px);
+    }
+    .next-arrow {
+      bottom: 250px;
+      left: calc(59% + 435px);
+    }
+  }
+  @media screen and (max-width: 1201px) {
     height: 1200px;
     width: 100vw;
     .text__container {
@@ -166,7 +206,7 @@
       height: 700px;
       bottom: 0;
       left: 50%;
-      transform: translateX(calc(-27% + 6px));
+      transform: translateX(calc(-25% + 6px));
     }
     .prev-arrow {
       bottom: 336px;
@@ -197,7 +237,6 @@
         }
       }
       .swiper-slide {
-        margin: 0 1.5% !important;
         div {
           width: 300px !important;
           height: 60% !important;
@@ -211,26 +250,27 @@
       }
       .swiper-slide.swiper-slide-active {
         width: 353px !important;
-        margin: 12px 1.5% 0 !important;
+        margin: 12px 3% 0 !important;
         div {
           width: 355px !important;
           height: 100% !important;
           img {
             width: 100%;
             height: 700px;
+            border-radius: 40px 40px 0 0;
           }
         }
       }
     }
   }
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1025px) {
     padding: 100px 50px;
     height: 1200px;
     .phone-layout {
       height: 600px;
       bottom: 0;
       left: 50%;
-      transform: translateX(calc(-33% + 6px));
+      transform: translateX(calc(-32% + 9px));
     }
     .phone-slide__container__wrapper {
       height: 600px;
@@ -240,7 +280,6 @@
         }
       }
       .swiper-slide {
-        margin: 0 1.5% !important;
         div {
           width: 300px !important;
           height: 60% !important;
@@ -253,10 +292,10 @@
         }
       }
       .swiper-slide.swiper-slide-active {
-        width: 308px !important;
-        margin: 12px 1.5% 0 !important;
+        width: 303px !important;
+        margin: 12px 30px 0 !important;
         div {
-          width: 308px !important;
+          width: 303px !important;
           height: 100% !important;
           img {
             width: 100%;
@@ -264,6 +303,14 @@
           }
         }
       }
+    }
+  }
+  @media screen and (max-width: 885px) {
+    .phone-layout {
+      height: 600px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(calc(-27% + 10px));
     }
   }
   @media screen and (max-width: 768px) {
@@ -284,12 +331,11 @@
       height: 500px;
       bottom: 0;
       left: 50%;
-      transform: translateX(calc(-46% + 2px));
+      transform: translateX(-45%);
     }
     .phone-slide__container__wrapper {
       height: 500px;
       .swiper-slide {
-        margin: 0 1.5% !important;
         div {
           width: 300px !important;
           height: 60% !important;
@@ -303,7 +349,7 @@
       }
       .swiper-slide.swiper-slide-active {
         width: 255px !important;
-        margin: 12px 1.5% 0 !important;
+        margin: 6px 4% 0 !important;
         div {
           width: 255px !important;
           height: 100% !important;
@@ -315,13 +361,9 @@
       }
     }
   }
-
-  @media screen and (max-width: 645px) {
+  @media screen and (max-width: 675px) {
     .phone-layout {
-      height: 500px;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(calc(-42% + 2px));
+      transform: translateX(-39%);
     }
   }
   @media screen and (max-width: 576px) {
@@ -342,12 +384,11 @@
       height: 444px;
       bottom: 0;
       left: 50%;
-      transform: translateX(calc(-42% + 4px));
+      transform: translateX(-35%);
     }
     .phone-slide__container__wrapper {
       height: 444px;
       .swiper-slide {
-        margin: 0 1% !important;
         div {
           width: 300px !important;
           height: 100% !important;
@@ -361,7 +402,7 @@
       }
       .swiper-slide.swiper-slide-active {
         width: 225px !important;
-        margin: 5px 5% 0 !important;
+        margin: 3px 5% 0 !important;
         div {
           width: 225px !important;
           img {
@@ -372,12 +413,27 @@
       }
     }
   }
-  @media screen and (max-width: 440px) {
+  @media screen and (max-width: 475px) {
     .phone-layout {
       height: 444px;
       bottom: 0;
       left: 50%;
-      transform: translateX(calc(-37% + 3.5px));
+      transform: translateX(-30%);
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .phone-layout {
+      height: 444px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-26%);
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .phone-layout {
+      height: 444px;
+      bottom: 0;
+      left: 68px;
     }
   }
 }
