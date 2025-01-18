@@ -65,10 +65,11 @@
 
   .phone-layout {
     position: absolute;
-    top: 113px;
-    right: 168px;
+    bottom: 0;
+    right: 13%;
     z-index: 9;
     pointer-events: none;
+    object-fit: contain;
   }
   .prev-arrow {
     position: absolute;
@@ -99,17 +100,15 @@
     .swiper {
       width: 100%;
       height: 100%;
-      .swiper-wrapper {
-        /* padding-left: calc(100vw - 90%); */
+      /* .swiper-wrapper {
+        padding-left: 12%;
         align-items: center;
-        left: 200px;
-      }
+      } */
     }
     .swiper-slide {
       display: flex;
       justify-content: center;
       align-items: center;
-      /* transform: translateX(200px); */
       
       div {
         width: 270px !important;
@@ -157,9 +156,118 @@
       }
     }
   }
-
+  @media screen and (max-width: 1200px) {
+    height: 1200px;
+    width: 100vw;
+    .text__container {
+      max-width: unset;
+    }
+    .phone-layout {
+      height: 700px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(calc(-27% + 6px));
+    }
+    .prev-arrow {
+      bottom: 336px;
+      left: 50%;
+      transform: translateX(-28vw);
+      width: 60px;
+      height: 60px;
+      display: none;
+    }
+    .next-arrow {
+      bottom: 336px;
+      left: 50%;
+      transform: translateX(22vw);
+      width: 60px;
+      height: 60px;
+      display: none;
+    }
+    .phone-slide__container__wrapper {
+      height: 700px;
+      width: 100vw !important;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 8;
+      .swiper {
+        .swiper-wrapper {
+          padding-left: 24px !important;
+        }
+      }
+      .swiper-slide {
+        margin: 0 1.5% !important;
+        div {
+          width: 300px !important;
+          height: 60% !important;
+          margin-bottom: 0;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+      .swiper-slide.swiper-slide-active {
+        width: 353px !important;
+        margin: 12px 1.5% 0 !important;
+        div {
+          width: 355px !important;
+          height: 100% !important;
+          img {
+            width: 100%;
+            height: 700px;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    padding: 100px 50px;
+    height: 1200px;
+    .phone-layout {
+      height: 600px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(calc(-33% + 6px));
+    }
+    .phone-slide__container__wrapper {
+      height: 600px;
+      .swiper {
+        .swiper-wrapper {
+          padding-left: 0 !important;
+        }
+      }
+      .swiper-slide {
+        margin: 0 1.5% !important;
+        div {
+          width: 300px !important;
+          height: 60% !important;
+          margin-bottom: 0;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+      .swiper-slide.swiper-slide-active {
+        width: 308px !important;
+        margin: 12px 1.5% 0 !important;
+        div {
+          width: 308px !important;
+          height: 100% !important;
+          img {
+            width: 100%;
+            height: 600px;
+          }
+        }
+      }
+    }
+  }
   @media screen and (max-width: 768px) {
-    height: 950px;
+    height: 1000px;
     padding: 50px 30px;
     .text__container {
       max-width: unset;
@@ -173,58 +281,51 @@
       }
     }
     .phone-layout {
-      top: 506px;
+      height: 500px;
+      bottom: 0;
       left: 50%;
-      transform: translateX(-50%);
-      width: 293.752px;
-      height: 444.708px;
+      transform: translateX(calc(-46% + 2px));
     }
     .phone-slide__container__wrapper {
-      height: 445px;
-      bottom: 0;
-      .swiper {
-        .swiper-wrapper {
-          position: absolute;
-          right: 85px;
-        }
-      }
+      height: 500px;
       .swiper-slide {
+        margin: 0 1.5% !important;
         div {
-          width: 226.14px !important;
-          height: 430px !important;
-          margin-bottom: -15px;
+          width: 300px !important;
+          height: 60% !important;
+          margin-bottom: 0;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
         }
       }
       .swiper-slide.swiper-slide-active {
-        width: 226.14px !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 30px !important;
+        width: 255px !important;
+        margin: 12px 1.5% 0 !important;
         div {
-          width: 226.14px !important;
-          height: 430px !important;
-          position: relative;
+          width: 255px !important;
+          height: 100% !important;
           img {
             width: 100%;
-            height: 430px;
+            height: 500px;
           }
         }
-        div::before {
-          content: unset;
-        }
       }
-    }
-    .prev-arrow {
-      display: none;
-    }
-    .next-arrow {
-      display: none;
     }
   }
 
+  @media screen and (max-width: 645px) {
+    .phone-layout {
+      height: 500px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(calc(-42% + 2px));
+    }
+  }
   @media screen and (max-width: 576px) {
-    height: 1137px;
+    height: 1265px;
     padding: 50px 30px;
     .text__container {
       max-width: unset;
@@ -238,53 +339,45 @@
       }
     }
     .phone-layout {
-      top: 692px;
+      height: 444px;
+      bottom: 0;
       left: 50%;
-      transform: translateX(-50%);
-      width: 293.752px;
-      height: 444.708px;
+      transform: translateX(calc(-42% + 4px));
     }
     .phone-slide__container__wrapper {
-      height: 445px;
-      bottom: 0;
-      .swiper {
-        .swiper-wrapper {
-          position: absolute;
-          right: 100px;
-        }
-      }
+      height: 444px;
       .swiper-slide {
+        margin: 0 1% !important;
         div {
-          width: 226.14px !important;
-          height: 430px !important;
-          margin-bottom: -15px;
+          width: 300px !important;
+          height: 100% !important;
+          margin-bottom: 0;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
         }
       }
       .swiper-slide.swiper-slide-active {
-        width: 226.14px !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 10.62px !important;
+        width: 225px !important;
+        margin: 5px 5% 0 !important;
         div {
-          width: 226.14px !important;
-          height: 430px !important;
-          position: relative;
+          width: 225px !important;
           img {
             width: 100%;
-            height: 430px;
+            height: 444px;
           }
-        }
-        div::before {
-          content: unset;
         }
       }
     }
-    .prev-arrow {
-      display: none;
-    }
-    .next-arrow {
-      display: none;
+  }
+  @media screen and (max-width: 440px) {
+    .phone-layout {
+      height: 444px;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(calc(-37% + 3.5px));
     }
   }
 }
