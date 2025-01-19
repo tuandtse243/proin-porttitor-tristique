@@ -63,7 +63,7 @@
       display: none;
     }
     .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
-      bottom: 28px;
+      bottom: 24px;
       left: 30px;
       right: unset;
     }

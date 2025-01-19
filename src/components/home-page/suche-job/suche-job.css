@@ -154,6 +154,9 @@
       }
       .suche-job__container__content__percent {
         max-width: 315px;
+        p {
+          margin: 2px 0 22px;
+        }
       }
       .suche-job__container__content__dollar {
         max-width: 315px;
