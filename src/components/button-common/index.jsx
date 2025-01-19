@@ -4,10 +4,10 @@ import NextBorderIcon from '../../icons/next-border-icon';
 
 const ButtonCommon = () => {
   return (
-    <div className="button__container">
+    <button className="button__container">
       <p>Get started</p>
       <NextBorderIcon />
-    </div>
+    </button>
   );
 }
 

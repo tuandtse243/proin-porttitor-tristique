@@ -5,11 +5,13 @@
   gap: 0 10px;
   max-height: 65px;
   height: 100%;
+  width: 100%;
   padding: 20px;
   border-radius: 40px;
   background: #CBFC01;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  border: none;
   p {
     font-size: 20px;
     font-style: normal;

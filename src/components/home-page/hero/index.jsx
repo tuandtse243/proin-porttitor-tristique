@@ -8,7 +8,7 @@ const Hero = () => {
       <p className="hero__container__subtitle">
         Nulla dapibus ultricies augue egestas rutrum. Etiam tempus euismod
       </p>
-      <div className="hero__container__button">Shop now</div>
+      <button className="hero__container__button">Shop now</button>
     </div>
   );
 }

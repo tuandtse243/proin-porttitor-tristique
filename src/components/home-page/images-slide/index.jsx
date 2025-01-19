@@ -62,10 +62,10 @@ const ImagesSlide = () => {
         pagination={{
           clickable: true,
         }}
-        autoplay={{
-          delay: 4500,
-          disableOnInteraction: false,
-        }}
+        // autoplay={{
+        //   delay: 4500,
+        //   disableOnInteraction: false,
+        // }}
         mousewheel={true}
         keyboard={true}
         modules={[Pagination, Mousewheel, Keyboard, Autoplay]}
