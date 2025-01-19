@@ -223,12 +223,12 @@
 
     .footer__container__copyright {
       flex-direction: column-reverse;
-      gap: 65px 0;
+      gap: 63px 0;
       p {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 40px 0;
+        gap: 38px 0;
         span {
           display: block;
         }
