@@ -11,7 +11,7 @@
       font-style: normal;
       font-weight: 700;
       line-height: normal;
-      margin: 0;
+      margin: 0 0 18px 0;
       span {
         position: relative;
       }
@@ -21,7 +21,7 @@
         height: 11px;
         width: 100%;
         background: #CBFC01;
-        bottom: -3px;
+        bottom: -5px;
         left: 0;
         z-index: 9;
       }
@@ -158,7 +158,7 @@
         }
       }
       .ante-leo__container__left__subtitle {
-        margin: 22px 0 22px;
+        margin: 34px 0 22px;
         text-align: center;
       }
       .ante-leo__container__left__imageMobile {

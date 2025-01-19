@@ -71,7 +71,7 @@ const Footer = () => {
       <div className="footer__container__copyright">
         <p>Copyright Agileops Testing © 2025</p>
         <p>
-          <span>Privacy Policy.</span> <span>Terms and Conditions</span>
+          <span>Privacy Policy.</span> <span style={{marginLeft: '12px'}}>Terms and Conditions</span>
         </p>
       </div>
 

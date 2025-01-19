@@ -1,5 +1,5 @@
 .donec-ac-neque__container {
-  margin: 100px 0;
+  margin: 195px 0 100px;
 
   .donec-ac-neque__container__block__wrapper {
     display: flex;
@@ -45,15 +45,12 @@
           }
         }
       }
-      /* .donec-ac-neque__container__block:first-child {
-        flex-direction: row-reverse;
-      } */
     }
   }
   @media screen and (max-width: 768px) {
     margin: 50px 0;
     .donec-ac-neque__container__block__wrapper {
-      margin-top: 22px;
+      margin-top: 21px;
       gap: 40px 0;
       .donec-ac-neque__container__block {
         height: unset;
